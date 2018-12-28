@@ -1,11 +1,20 @@
-body{
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #98d4f5;
+}
+
+h1 {
   margin: 0;
 }
 
-h1{
-  margin-top: 0;
+
+.bottom-cloud{
+  position: absolute;
+  right: 900px;
 }
 
-div {
-  background-color: #98ccd3;
+.top-cloud {
+  position: relative;
+  left: 200px;
 }
