@@ -1,7 +1,6 @@
 body {
   margin: 0;
   text-align: center;
-  background-color: #98d4f5;
   font-family: 'Merriweather', serif;
 }
 
@@ -36,4 +35,8 @@ h3 {
   position: absolute;
   left: 300px;
   bottom: 300px;
+}
+
+footer {
+  font-size: .5em;
 }
