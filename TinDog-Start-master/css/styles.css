@@ -47,3 +47,8 @@ h1 {
 .download-button {
   margin: 5% 3% 5% 0%;
 }
+ #features {
+   text-align: center;
+   font-family: "Montserrat";
+   font-weight: bold;
+ }
