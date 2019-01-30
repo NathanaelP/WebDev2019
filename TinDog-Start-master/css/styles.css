@@ -6,6 +6,10 @@ h1 {
   color: white;
 }
 
+i {
+  font-size: 24rem;
+}
+
 .navbar-brand {
   font-family: "Montserrat";
   font-size: 3rem;
