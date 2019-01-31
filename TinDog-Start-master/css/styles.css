@@ -62,14 +62,33 @@ h1 {
    text-align: center;
    padding: 0;
    margin:0;
+   font-size: 1.5rem;
+ }
+
+ #features p {
+   color: #8f8f8f;
  }
 
  .row {
-   margin: auto 0;
+   margin: 50px 0;
  }
 
 
  .fa-check-circle, .fa-bullseye, .fa-heart {
-   font-size: 2rem;
+   font-size: 4rem;
    color: #ef8172;
+   margin-bottom: 40px;
+   margin-top: 60px;
  }
+
+ .fa-check-circle:hover {
+   color: #ff4c68;
+ }
+
+ .fa-bullseye:hover {
+   color: #ff4c68;
+ }
+
+.fa-heart:hover {
+  color: #ff4c68;
+}
