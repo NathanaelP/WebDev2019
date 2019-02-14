@@ -41,6 +41,9 @@ h1 {
 
 #title {
   background-color: #ff4c68;
+  z-index: 0;
+  margin-bottom: -280px;
+  position: relative;
 }
 
 /* Download Buttons */
@@ -63,6 +66,9 @@ h1 {
    padding: 7% 15%;
    margin:0;
    font-size: 1.5rem;
+   z-index: 1;
+   background-color: #fff;
+   position: relative;
  }
 
 p {
@@ -109,6 +115,11 @@ h2 {
 
 /* Press Section */
 
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
 #press {
   background-color: #ef8172;
   text-align: center;
@@ -118,4 +129,8 @@ h2 {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
 }
