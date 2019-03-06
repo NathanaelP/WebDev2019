@@ -134,3 +134,13 @@ h2 {
 .pricing-column {
   padding: 3% 2%;
 }
+
+@media (max-width: 1028px){
+  .phone {
+    position: static;
+    transform: rotate(0);
+  }
+  h1 {
+    text-align: center;
+  }
+}
