@@ -150,3 +150,28 @@ h2 {
     position: static;
   }
 }
+/* Call To Action */
+ #cta {
+   color: white;
+   font-family: Montserrat;
+   text-align: center;
+   background-color: #ff4c68;
+   padding-top: 50px;
+   margin: auto;
+ }
+
+ #cta h3 {
+   font-size: 3rem;
+   width: 50%;
+   margin: auto;
+ }
+
+ /* Footer */
+
+ #footer {
+   text-align: center;
+ }
+
+ #footer i {
+   padding: 25px 10px;
+ }
