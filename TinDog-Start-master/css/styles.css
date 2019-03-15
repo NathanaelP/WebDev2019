@@ -153,16 +153,16 @@ h2 {
 /* Call To Action */
  #cta {
    color: white;
-   font-family: Montserrat;
+   font-family: "Montserrat";
    text-align: center;
    background-color: #ff4c68;
-   padding-top: 50px;
-   margin: auto;
+   padding: 7% 15%;
+   /* margin: auto; */
  }
 
  #cta h3 {
    font-size: 3rem;
-   width: 50%;
+   /* width: 50%; */
    margin: auto;
  }
 
@@ -170,6 +170,7 @@ h2 {
 
  #footer {
    text-align: center;
+   padding: 7% 15%;
  }
 
  #footer i {
