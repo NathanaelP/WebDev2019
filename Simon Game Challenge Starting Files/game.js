@@ -10,4 +10,6 @@ function nextSequence(){
   return randomNumber;
 }
 
-console.log(gamePattern);
+
+  $("#green").fadeOut("fast");
+  $("#green").fadeIn("fast");
