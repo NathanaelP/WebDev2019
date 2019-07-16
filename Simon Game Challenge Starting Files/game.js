@@ -13,3 +13,5 @@ function nextSequence(){
 
   $("#green").fadeOut("fast");
   $("#green").fadeIn("fast");
+
+console.log(gamePattern);
