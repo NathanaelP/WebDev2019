@@ -1,17 +1,16 @@
 var gamePattern = [];//Create Empty array for the color patterns
-gamePattern.push(randomChosenColor);//Add the random color to the end of the game color patterns array.
 
 var buttonColors = ["red", "blue", "green", "yellow"];//Create a color array
 
-var randomChosenColor = buttonColors[nextSequence()];//Use random number function to select random color from color array
-
 function nextSequence(){
-  var randomNumber = 1 + Math.floor(Math.random()*3);//Create a random number
-  return randomNumber;
+  var randomNumber = Math.floor(Math.random()*4);//Create a random number
+  var randomChosenColor = buttonColors[randomNumber];//Use random number function to select random color from color array
+  gamePattern.push(randomChosenColor);//Add the random color to the end of the game color patterns array.
+  $("#" + randomChosenColor).fadeIn("fast").fadeOut("fast").fadeIn("fast");
+  var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
+  audio.play();
 }
 
 
-  $("#green").fadeOut("fast");
-  $("#green").fadeIn("fast");
 
-console.log(gamePattern);
+console.log(nextSequence());
