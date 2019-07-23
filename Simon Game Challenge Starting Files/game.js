@@ -12,5 +12,9 @@ function nextSequence(){
 }
 
 
+  $("btn").click(function(){
+    alert("You clicked the right button");
+  });
+
 
 console.log(nextSequence());
