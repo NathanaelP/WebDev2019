@@ -8,15 +8,21 @@ function nextSequence(){
   var randomChosenColor = buttonColors[randomNumber];//Use random number function to select random color from color array
   gamePattern.push(randomChosenColor);//Add the random color to the end of the game color patterns array.
   $("#" + randomChosenColor).fadeIn("fast").fadeOut("fast").fadeIn("fast");
-  var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
-  audio.play();
+  // var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
+  // audio.play();
+  playSound(randomChosenColor);
 }
 
+function playSound(name){
+  var audio = new Audio("sounds/" + name + ".mp3");
+  audio.play();
+}
 
   $(".btn").click(function(){
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
-    console.log(userClickedPattern);
+    playSound(userChosenColor);
+    $("#"+userChosenColor).fadeIn("fast").fadeOut("fast").fadeIn("fast");
   });
 
 
