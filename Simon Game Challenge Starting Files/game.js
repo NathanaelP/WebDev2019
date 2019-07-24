@@ -1,3 +1,4 @@
+var userClickedPattern = [];
 var gamePattern = [];//Create Empty array for the color patterns
 
 var buttonColors = ["red", "blue", "green", "yellow"];//Create a color array
@@ -12,8 +13,10 @@ function nextSequence(){
 }
 
 
-  $("btn").click(function(){
-    alert("You clicked the right button");
+  $(".btn").click(function(){
+    var userChosenColor = $(this).attr("id");
+    userClickedPattern.push(userChosenColor);
+    console.log(userClickedPattern);
   });
 
 
