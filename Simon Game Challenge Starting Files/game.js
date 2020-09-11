@@ -21,6 +21,9 @@ $(".btn").click(function(){//select the clicked button
   userClickedPattern.push(userChosenColor);//Pushes clicked color to clicked array
   playSound(userChosenColor);//Plays a sound based on user color
   $("#"+userChosenColor).fadeIn("fast").fadeOut("fast").fadeIn("fast");//Takes the ID of the color and makes it fade in an out
+  
+  checkAnswer(userClickedPattern.length-1);
+  
 });
 
 function nextSequence(){
@@ -39,7 +42,20 @@ function nextSequence(){
 }
 
 function checkAnswer(currentLevel) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]){
+    
+    console.log("success");
+  }
   
+  if (userClickedPattern.length === gamePattern.length) {
+    
+    setTimeout(function () {
+      nextSequence()
+    }, 1000);
+    
+  } else {
+    console.log("wrong")
+  }
 }
 
 function playSound(name){
