@@ -44,23 +44,36 @@ function nextSequence() {
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
 
-    console.log("success"); //logs if the answer is correct
+      console.log("success"); //logs if the answer is correct
+
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function() {
+        nextSequence()
+      }, 1000);
+    }
+
   } else {
-    console.log("wrong") // logs if the answer is wrong
-    $('body').addClass("game-over", setTimeout(function() { //add a color class to the body
+    console.log("wrong"); // logs if the answer is wrong
+
+    playSound("wrong");
+
+    $('body').addClass("game-over");//add a color class to the body
+    setTimeout(function() {
       $('body').removeClass("game-over"); //removes the color class after 200ms
-    }, 200));
+    }, 200);
 
     $("#level-title").text("Game Over, Press Any Key to Restart");
-  }
 
-  if (userClickedPattern.length === gamePattern.length) {
-
-    setTimeout(function() {
-      nextSequence()
-    }, 1000)
+    startOver();
   };
-}
+
+};
+
+function startOver() {
+  level = 0;
+  started = false;
+  gamePattern = [];
+};
 
 
 function playSound(name) {
